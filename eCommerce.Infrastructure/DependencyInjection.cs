@@ -15,7 +15,7 @@ namespace eCommerce.Infrastructure
         {
             // TO DO: Add services to the IoC container
 
-            services.AddSingleton<IUsersRepository, UsersRepository>();
+            services.AddTransient<IUsersRepository, UsersRepository>();
             return services;
         }
     }
